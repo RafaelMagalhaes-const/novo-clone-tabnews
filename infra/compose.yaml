@@ -1,0 +1,7 @@
+services:
+  database:
+    image: "postgres:16.0-alpine3.18" # meu repositório
+    environment: # declaramos a chave - responsabiliza em passar valores para o ambiente para o container
+      POSTGRES_PASSWORD: "local_password" # até aqui nosso container está fechado
+    ports:
+      - "5432:5432"
